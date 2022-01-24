@@ -1,6 +1,15 @@
 <template>
+  <home />
 </template>
 
 <script>
-export default {}
+import home from './home.vue'
+export default {
+  components: { home }
+}
 </script>
+<style lang="scss">
+body {
+  background: #f0efef;
+}
+</style>

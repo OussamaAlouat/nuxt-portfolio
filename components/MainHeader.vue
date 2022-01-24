@@ -1,6 +1,6 @@
 <template>
   <div class="main-header">
-    <a href="#">Portfolio</a>
+    <a class="active" href="#">Portfolio</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
   </div>
@@ -22,6 +22,11 @@ export default {
     margin-right: 8px;
     text-decoration: none;
     color: black;
+
+    &.active {
+      color: red;
+      transform: rotate(25deg);
+    }
   }
 
   a:hover {
