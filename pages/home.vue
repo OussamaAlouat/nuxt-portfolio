@@ -1,17 +1,11 @@
 <template>
-  <div>
-    <header>
-      <MainHeader/>
-    </header>
-    <main class="home">
-      <div class="home__header">
-        <h1 class="home__title">Oussama Alouat</h1>
-        <div class="home__container">
-          <div class="home__img-container">
-            <div class="">
-              Me llamo Oussama Alouat, soy Desarrollador Front-End. Llevo desde el año 2018 en el mundo del desarrollo de manera profesional
-            </div>
-          </div>
+  <div class="home">
+    <main class="home__main">
+      <div class="home__main__header">
+        <h1 class="home__main__title">Oussama Alouat</h1>
+        <div class="home__main__container">
+          Soy Desarrollador Front-End. Llevo desde el
+          año 2018 en el mundo del desarrollo de manera profesional
         </div>
       </div>
     </main>
@@ -22,44 +16,33 @@
 export default {
   data() {
     return {
-      img: './../assets/images/experience.jpg'
+      img: './../assets/images/experience.jpg',
     }
-  }
-
+  },
 }
 </script>
 
 <style lang="scss">
 .home {
-  &__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-  };
+  height: 100%;
 
-  &__container {
+  &__main {
     display: flex;
-    justify-content: space-around;
-    img {
-      border-radius: 50%;
-      scale: 0.5;
-      width: 300px;
-      height: 300px;
+    height: 100%;
+    justify-content: center;
+    &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
     }
 
-    img:hover {
-      transition: ease-out .1s;
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 1rem;
     }
   }
 }
-
-.box-description {
-  background: white;
-    margin-top: 10px;
-    width: 50%;
-    border-radius: 10px;
-}
-
 </style>
