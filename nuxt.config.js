@@ -4,6 +4,9 @@ import en from './lang/en.json';
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  router: {
+    base: '/nuxt-portfolio/',
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -25,7 +28,9 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -34,9 +39,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
-    ['@nuxtjs/vuetify', { /* module options */ }]
-    
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -45,7 +48,6 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-i18n',
-    '@nuxtjs/vuetify'
   ],
 
   i18n: {
