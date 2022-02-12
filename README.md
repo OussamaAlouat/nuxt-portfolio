@@ -1,5 +1,7 @@
 # portfolio
 
+URL : https://oussamaalouat.github.io/nuxt-portfolio/
+
 ## Build Setup
 
 ```bash

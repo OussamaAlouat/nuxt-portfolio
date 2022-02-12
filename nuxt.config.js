@@ -4,6 +4,9 @@ import en from './lang/en.json';
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  router: {
+    base: '/nuxt-portfolio/',
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -34,18 +37,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
-    ['@nuxtjs/vuetify', { /* module options */ }]
-    
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-i18n',
-    '@nuxtjs/vuetify'
   ],
 
   i18n: {
@@ -70,7 +69,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'es'
     }
   },
 
