@@ -1,5 +1,8 @@
 <template>
-  <home />
+  <div class="h-100">
+    <MainHeader id="app-header" />
+    <home />
+  </div>
 </template>
 
 <script>
@@ -11,5 +14,10 @@ export default {
 <style lang="scss">
 body {
   background: #f0efef;
+}
+
+#app-header {
+  position: fixed;
+  right: 0;
 }
 </style>
